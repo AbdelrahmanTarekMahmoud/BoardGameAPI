@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using MyBGList.Models;
+using MyBGList.Presistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

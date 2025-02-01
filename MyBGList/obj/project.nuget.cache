@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "L9JiI/jOuhU=",
+  "dgSpecHash": "MnuqG7tPltE=",
   "success": true,
   "projectFilePath": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\MyBGList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdel\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\abdel\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
@@ -70,6 +71,7 @@
     "C:\\Users\\abdel\\.nuget\\packages\\system.formats.asn1\\9.0.1\\system.formats.asn1.9.0.1.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\system.io.pipelines\\9.0.1\\system.io.pipelines.9.0.1.nupkg.sha512",
+    "C:\\Users\\abdel\\.nuget\\packages\\system.linq.dynamic.core\\1.6.0.1\\system.linq.dynamic.core.1.6.0.1.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\abdel\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

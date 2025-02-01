@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace MyBGList.Models
+namespace MyBGList.Presistence
 {
     public class ApplicationDbContext : DbContext
     {

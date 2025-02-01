@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Abdo\\GameBoard Api\\MyBGList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\presistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\presistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\entities\\boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\entities\\boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\entities\\domain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\entities\\domain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\dto\\boardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\dto\\boardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\entities\\mechanic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\entities\\mechanic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\entities\\csv\\bggrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\entities\\csv\\bggrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Presistence\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Presistence\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Presistence\\ApplicationDbContext.cs",
-              "RelativeToolTip": "MyBGList\\Presistence\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:48:25.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Mechanic.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Mechanic.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Entities\\Mechanic.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Mechanic.cs",
-              "RelativeToolTip": "MyBGList\\Entities\\Mechanic.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:33:06.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Domain.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Domain.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Entities\\Domain.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Domain.cs",
-              "RelativeToolTip": "MyBGList\\Entities\\Domain.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBUAAAAIAAAAAAAAAA==",
+              "Title": "BoardGameDTO.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\BoardGameDTO.cs",
+              "RelativeDocumentMoniker": "MyBGList\\DTO\\BoardGameDTO.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\BoardGameDTO.cs",
+              "RelativeToolTip": "MyBGList\\DTO\\BoardGameDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:33:06.411Z",
+              "WhenOpened": "2025-02-01T17:14:49.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BoardGamesController.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Controllers\\BoardGamesController.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
+              "RelativeToolTip": "MyBGList\\Controllers\\BoardGamesController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwCIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T14:09:43.34Z",
               "EditorCaption": ""
             },
             {
@@ -75,9 +66,35 @@
               "RelativeDocumentMoniker": "MyBGList\\Entities\\BoardGame.cs",
               "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\BoardGame.cs",
               "RelativeToolTip": "MyBGList\\Entities\\BoardGame.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACwAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:31:09.045Z",
+              "WhenOpened": "2025-02-01T14:08:11.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeedController.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\SeedController.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Controllers\\SeedController.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\SeedController.cs",
+              "RelativeToolTip": "MyBGList\\Controllers\\SeedController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowJIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T21:48:17.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BggRecord.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Csv\\BggRecord.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Entities\\Csv\\BggRecord.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Csv\\BggRecord.cs",
+              "RelativeToolTip": "MyBGList\\Entities\\Csv\\BggRecord.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwB8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T21:43:24.971Z",
               "EditorCaption": ""
             }
           ]
