@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "D:\\Abdo\\GameBoard Api\\MyBGList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\datavalidation\\customvalidators\\sortcolumnvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\datavalidation\\customvalidators\\sortcolumnvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\dto\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\dto\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\datavalidation\\customvalidators\\sortordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\datavalidation\\customvalidators\\sortordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\entities\\boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\entities\\boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\dto\\restdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\dto\\restdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\dto\\boardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\dto\\boardgamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\entities\\csv\\bggrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\entities\\csv\\bggrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LinkDTO.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\LinkDTO.cs",
-              "RelativeDocumentMoniker": "MyBGList\\DTO\\LinkDTO.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\LinkDTO.cs",
-              "RelativeToolTip": "MyBGList\\DTO\\LinkDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Title": "SortOrderValidator.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DataValidation\\CustomValidators\\SortOrderValidator.cs",
+              "RelativeDocumentMoniker": "MyBGList\\DataValidation\\CustomValidators\\SortOrderValidator.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DataValidation\\CustomValidators\\SortOrderValidator.cs",
+              "RelativeToolTip": "MyBGList\\DataValidation\\CustomValidators\\SortOrderValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T17:28:38.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GlobalUsing.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\GlobalUsing.cs",
-              "RelativeDocumentMoniker": "MyBGList\\GlobalUsing.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\GlobalUsing.cs",
-              "RelativeToolTip": "MyBGList\\GlobalUsing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:32:08.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RestDTO.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\RestDTO.cs",
-              "RelativeDocumentMoniker": "MyBGList\\DTO\\RestDTO.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\RestDTO.cs",
-              "RelativeToolTip": "MyBGList\\DTO\\RestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:04:17.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BoardGameDTO.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\BoardGameDTO.cs",
-              "RelativeDocumentMoniker": "MyBGList\\DTO\\BoardGameDTO.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DTO\\BoardGameDTO.cs",
-              "RelativeToolTip": "MyBGList\\DTO\\BoardGameDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T17:14:49.912Z",
+              "WhenOpened": "2025-02-05T14:39:17.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BoardGamesController.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Controllers\\BoardGamesController.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
-              "RelativeToolTip": "MyBGList\\Controllers\\BoardGamesController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGgAAAAcAAAAAAAAAA==",
+              "Title": "SortColumnValidator.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DataValidation\\CustomValidators\\SortColumnValidator.cs",
+              "RelativeDocumentMoniker": "MyBGList\\DataValidation\\CustomValidators\\SortColumnValidator.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\DataValidation\\CustomValidators\\SortColumnValidator.cs",
+              "RelativeToolTip": "MyBGList\\DataValidation\\CustomValidators\\SortColumnValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:09:43.34Z",
+              "WhenOpened": "2025-02-05T14:39:00.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BoardGame.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\BoardGame.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Entities\\BoardGame.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\BoardGame.cs",
-              "RelativeToolTip": "MyBGList\\Entities\\BoardGame.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAACwAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:08:11.618Z",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MyBGList\\appsettings.Development.json",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\appsettings.Development.json*",
+              "RelativeToolTip": "MyBGList\\appsettings.Development.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T13:26:31.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SeedController.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\SeedController.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Controllers\\SeedController.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\SeedController.cs",
-              "RelativeToolTip": "MyBGList\\Controllers\\SeedController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowJIAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Program.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Program.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Program.cs",
+              "RelativeToolTip": "MyBGList\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T21:48:17.683Z",
+              "WhenOpened": "2025-02-05T12:01:36.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BggRecord.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Csv\\BggRecord.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Entities\\Csv\\BggRecord.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Entities\\Csv\\BggRecord.cs",
-              "RelativeToolTip": "MyBGList\\Entities\\Csv\\BggRecord.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwB8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T21:43:24.971Z",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\appsettings.json",
+              "RelativeDocumentMoniker": "MyBGList\\appsettings.json",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\appsettings.json",
+              "RelativeToolTip": "MyBGList\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T12:01:27.638Z",
               "EditorCaption": ""
             }
           ]

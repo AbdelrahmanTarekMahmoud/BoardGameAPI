@@ -1,11 +1,15 @@
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MyBGList.Presistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+options.ModelBindingMessageProvider.SetAttemptedValueIsInvalidAccessor(
+(x, y) => $"The value '{x}' is not the same type as '{y}' try '{y.GetType()}'."));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opts =>
     opts.ResolveConflictingActions(apiDesc => apiDesc.First())
@@ -41,6 +45,12 @@ builder.Services.AddCors(options =>
     });
 });
 
+
+//replaced by ManualValidationFilterAttribute
+//Configuring the modelstate
+//builder.Services.Configure<ApiBehaviorOptions>(options =>
+//options.SuppressModelStateInvalidFilter = true);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -66,10 +76,22 @@ app.MapGet("/error/test",
     [ResponseCache(NoStore = true)]
     () => { throw new Exception("test"); });
 
-app.MapGet("/error", 
-    [EnableCors("AnyOrigin")]
-    [ResponseCache(NoStore = true)]
-    () => Results.Problem());
+app.MapGet("/error",
+[EnableCors("AnyOrigin")]
+[ResponseCache(NoStore = true)] (HttpContext context) =>
+{
+    var exceptionHandler =
+    context.Features.Get<IExceptionHandlerPathFeature>();
+    // TODO: logging, sending notifications, and more 
+    var details = new ProblemDetails();
+    details.Detail = exceptionHandler?.Error.Message;
+    details.Extensions["traceId"] =
+    System.Diagnostics.Activity.Current?.Id ?? context.TraceIdentifier;
+    details.Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1";
+    details.Status = StatusCodes.Status500InternalServerError;
+    return Results.Problem(details);
+});
+
 
 //Testing the code on demand constraint of rest 
 app.MapGet("/cod/test",
