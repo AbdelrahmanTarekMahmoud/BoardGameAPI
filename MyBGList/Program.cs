@@ -1,9 +1,39 @@
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using MyBGList.Presistence;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//Logging
+builder.Logging.ClearProviders()
+    .AddConsole()
+    .AddDebug();
+
+builder.Host.UseSerilog((ctx, lc) => { 
+    lc.ReadFrom.Configuration(ctx.Configuration);
+    lc.WriteTo.MSSqlServer(
+    connectionString:
+    ctx.Configuration.GetConnectionString("DefaultConnection"),
+    sinkOptions: new MSSqlServerSinkOptions
+    {
+        TableName = "LogEvents",
+        AutoCreateSqlTable = true
+    },
+    columnOptions: new ColumnOptions()
+    {
+        AdditionalColumns = new SqlColumn[]
+        {
+            new SqlColumn()
+            {
+                ColumnName = "SourceContext",
+                PropertyName = "SourceContext",
+                DataType = System.Data.SqlDbType.NVarChar
+            }
+        }
+    }
+    );
+},
+writeToProviders: true);
+
 
 // Add services to the container.
 builder.Services.AddControllers(options =>
@@ -84,11 +114,17 @@ app.MapGet("/error",
     context.Features.Get<IExceptionHandlerPathFeature>();
     // TODO: logging, sending notifications, and more 
     var details = new ProblemDetails();
+
     details.Detail = exceptionHandler?.Error.Message;
     details.Extensions["traceId"] =
     System.Diagnostics.Activity.Current?.Id ?? context.TraceIdentifier;
     details.Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1";
     details.Status = StatusCodes.Status500InternalServerError;
+
+    app.Logger.LogError(CustomLogEvents.Error_Get,
+    exceptionHandler?.Error,
+    "An unhandled exception occurred.");
+
     return Results.Problem(details);
 });
 

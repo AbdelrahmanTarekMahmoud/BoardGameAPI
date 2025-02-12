@@ -2,6 +2,7 @@
 using MyBGList.Entities;
 using MyBGList.Helpers.CustomValidators;
 using MyBGList.Presistence;
+using MyBGList.Constants;
 
 namespace MyBGList.Controllers
 {
@@ -27,7 +28,14 @@ namespace MyBGList.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any , Duration = 60)]
         public async Task<ActionResult<RestDTO<BoardGame[]>>> GetBoardGames([FromQuery] RequestDTO<BoardGameDTO> input)
         {
-          
+            _logger.LogInformation(CustomLogEvents.BoardGamesController_Get,
+             "Get method aaaaaaaaaaaaaaaaaastarted at {StartTime:HH:mm}.", DateTime.Now);
+
+            _logger.LogInformation(CustomLogEvents.BoardGamesController_Get,
+            $"Get eeeeeeeeeeeeeeeeeeeeee started at {DateTime.Now:HH:mm}");
+
+
+
             //for chained query
             var query = _context.BoardGames.AsQueryable();
             //checks if there is a filterQuery 
@@ -70,6 +78,7 @@ namespace MyBGList.Controllers
         [ResponseCache(NoStore = true)]
         public async Task<RestDTO<BoardGame?>> UpdateBoardGame(BoardGameDTO request)
         {
+            
             var boardGame = await _context.BoardGames.Where(x => x.Id == request.Id).FirstOrDefaultAsync();
             if(boardGame != null)
             {

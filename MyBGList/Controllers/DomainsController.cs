@@ -26,7 +26,8 @@ namespace MyBGList.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
         public async Task<ActionResult<RestDTO<Domain[]>>> Get([FromQuery] RequestDTO<DomainDTO> input)
         {
-            if(!ModelState.IsValid)
+            _logger.LogInformation("WWWWWWWWWWWWWWWWdWWWWWWWW");
+            if (!ModelState.IsValid)
             {
                 var details = new ValidationProblemDetails(ModelState);
                 details.Extensions["traceId"] =
