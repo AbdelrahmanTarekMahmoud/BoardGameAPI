@@ -1,4 +1,5 @@
-﻿using MyBGList.Presistence;
+﻿using Microsoft.AspNetCore.Authorization;
+using MyBGList.Presistence;
 
 [Route("[controller]")]
 [ApiController]
@@ -14,7 +15,7 @@ public class MechanicsController : ControllerBase
     }
 
     [HttpGet]
-    [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
+    [ResponseCache(CacheProfileName = "60Secs")]
     public async Task<RestDTO<Mechanic[]>> Get([FromQuery] RequestDTO<MechanicsDTO> input)
     {
         var query = _context.Mechanics.AsQueryable();
@@ -51,8 +52,9 @@ public class MechanicsController : ControllerBase
         };
     }
 
+    [Authorize(Roles = Roles.Moderator)]
     [HttpPost]
-    [ResponseCache(NoStore = true)]
+    [ResponseCache(CacheProfileName = "NoCache")]
     public async Task<RestDTO<Mechanic?>> Update([FromBody] MechanicsDTO request)
     {
         var mechanic = await _context.Mechanics.Where(x => x.Id == request.Id).FirstOrDefaultAsync();
@@ -81,8 +83,9 @@ public class MechanicsController : ControllerBase
         };
     }
 
+    [Authorize(Roles = Roles.Administrator)]
     [HttpDelete("{id}")]
-    [ResponseCache(NoStore = true)]
+    [ResponseCache(CacheProfileName = "NoCache")]
     public async Task<RestDTO<Mechanic?>> Delete([FromRoute] int id)
     {
         var mechanic = await _context.Mechanics.Where(x => x.Id == id).FirstOrDefaultAsync();
@@ -105,8 +108,9 @@ public class MechanicsController : ControllerBase
         };
     }
 
+    [Authorize(Roles = Roles.Administrator)]
     [HttpDelete("all", Name = "DeleteAllMechanics")]
-    [ResponseCache(NoStore = true)]
+    [ResponseCache(CacheProfileName = "NoCache")]
     public async Task<IActionResult> DeleteAllMechanics()
     {
         var allMechanics = _context.Mechanics.ToList();

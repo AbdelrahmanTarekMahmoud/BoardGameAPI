@@ -1,4 +1,5 @@
 ﻿using Azure.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -23,7 +24,7 @@ namespace MyBGList.Controllers
 
         [HttpGet]
         [ManualValidationFilterAttribute]
-        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
+        [ResponseCache(CacheProfileName = "60Secs")]
         public async Task<ActionResult<RestDTO<Domain[]>>> Get([FromQuery] RequestDTO<DomainDTO> input)
         {
             _logger.LogInformation("WWWWWWWWWWWWWWWWdWWWWWWWW");
@@ -90,7 +91,8 @@ namespace MyBGList.Controllers
         }
 
         [HttpPost]
-        [ResponseCache(NoStore = true)]
+        [Authorize(Roles = Roles.Moderator)]
+        [ResponseCache(CacheProfileName = "NoCache")]
         public async Task<RestDTO<Domain?>> Update([FromBody]DomainDTO request)
         {
             var domain = await _context.Domains.Where(x => x.Id ==  request.Id).FirstOrDefaultAsync();
@@ -120,7 +122,8 @@ namespace MyBGList.Controllers
 
 
         [HttpDelete("{id}")]
-        [ResponseCache(NoStore = true)]
+        [Authorize(Roles = Roles.Administrator)]
+        [ResponseCache(CacheProfileName = "NoCache")]
         public async Task<RestDTO<Domain?>> Delete([FromRoute] int id)
         {
             var domain = await _context.Domains.Where(x => x.Id == id).FirstOrDefaultAsync();
@@ -143,9 +146,9 @@ namespace MyBGList.Controllers
             };
         }
 
-
+        [Authorize(Roles = Roles.Administrator)]
         [HttpDelete("all", Name = "DeleteAllDomains")]
-        [ResponseCache(NoStore = true)]
+        [ResponseCache(CacheProfileName = "NoCache")]
         public async Task<IActionResult> DeleteAllDomains()
         {
             var allDomains = _context.Domains.ToList();

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Abdo\\GameBoard Api\\MyBGList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|d:\\abdo\\gameboard api\\mybglist\\mybglist\\constants\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68E4224-833B-4F58-A4D8-BF0B62864701}|MyBGList\\MyBGList.csproj|solutionrelative:mybglist\\constants\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "MyBGList\\appsettings.Development.json",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\appsettings.Development.json",
-              "RelativeToolTip": "MyBGList\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-12T15:26:05.928Z",
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "MyBGList\\GlobalUsing.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\GlobalUsing.cs",
+              "RelativeToolTip": "MyBGList\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:16:33.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Program.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Program.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Program.cs",
-              "RelativeToolTip": "MyBGList\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBwAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Constants\\Roles.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Constants\\Roles.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Constants\\Roles.cs",
+              "RelativeToolTip": "MyBGList\\Constants\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:10:55.429Z",
+              "WhenOpened": "2025-02-25T17:34:23.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BoardGamesController.cs",
-              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
-              "RelativeDocumentMoniker": "MyBGList\\Controllers\\BoardGamesController.cs",
-              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs*",
-              "RelativeToolTip": "MyBGList\\Controllers\\BoardGamesController.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCIAAABBAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Program.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Program.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Program.cs",
+              "RelativeToolTip": "MyBGList\\Program.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAgwPwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T16:48:43.98Z",
+              "WhenOpened": "2025-02-25T17:16:35.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeedController.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\SeedController.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Controllers\\SeedController.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\SeedController.cs",
+              "RelativeToolTip": "MyBGList\\Controllers\\SeedController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:13:51.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MyBGList\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Abdo\\GameBoard Api\\MyBGList\\MyBGList\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MyBGList\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowF8AAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:43:29.115Z",
               "EditorCaption": ""
             }
           ]

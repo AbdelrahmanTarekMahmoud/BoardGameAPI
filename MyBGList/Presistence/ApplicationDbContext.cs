@@ -1,8 +1,9 @@
-﻿using System.Reflection;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Reflection;
 
 namespace MyBGList.Presistence
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApiUser>
     {
         public DbSet<BoardGame> BoardGames { get; set; }
         public DbSet<Domain> Domains { get; set; }

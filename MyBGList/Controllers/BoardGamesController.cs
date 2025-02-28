@@ -3,6 +3,7 @@ using MyBGList.Entities;
 using MyBGList.Helpers.CustomValidators;
 using MyBGList.Presistence;
 using MyBGList.Constants;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyBGList.Controllers
 {
@@ -25,7 +26,8 @@ namespace MyBGList.Controllers
 
 
         [HttpGet(Name = "GetBoardGames")]
-        [ResponseCache(Location = ResponseCacheLocation.Any , Duration = 60)]
+        [ResponseCache(CacheProfileName = "60Secs")]
+        
         public async Task<ActionResult<RestDTO<BoardGame[]>>> GetBoardGames([FromQuery] RequestDTO<BoardGameDTO> input)
         {
             _logger.LogInformation(CustomLogEvents.BoardGamesController_Get,
@@ -73,9 +75,9 @@ namespace MyBGList.Controllers
             };
         }
 
-
+        [Authorize(Roles = Roles.Moderator)]
         [HttpPost(Name = "UpdateBoardGame")]
-        [ResponseCache(NoStore = true)]
+        [ResponseCache(CacheProfileName = "NoCache")]
         public async Task<RestDTO<BoardGame?>> UpdateBoardGame(BoardGameDTO request)
         {
             
@@ -108,9 +110,9 @@ namespace MyBGList.Controllers
             };
         }
 
-
+        [Authorize(Roles = Roles.Administrator)]
         [HttpDelete("{id}")]
-        [ResponseCache(NoStore = true)]
+        [ResponseCache(CacheProfileName = "NoCache")]
         public async Task<RestDTO<BoardGame?>> Delete(int id)
         {
             var boardGame = await _context.BoardGames.Where(x => x.Id == id).FirstOrDefaultAsync();
@@ -135,8 +137,9 @@ namespace MyBGList.Controllers
             };
         }
 
+        [Authorize(Roles = Roles.Administrator)]
         [HttpDelete("all", Name = "DeleteAllBoardGames")]
-        [ResponseCache(NoStore = true)]
+        [ResponseCache(CacheProfileName = "NoCache")]
         public async Task<IActionResult> DeleteAllBoardGames()
         {
             var allBoardGames = _context.BoardGames.ToList();

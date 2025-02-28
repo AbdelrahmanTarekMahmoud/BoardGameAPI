@@ -37,8 +37,17 @@ writeToProviders: true);
 
 // Add services to the container.
 builder.Services.AddControllers(options =>
-options.ModelBindingMessageProvider.SetAttemptedValueIsInvalidAccessor(
-(x, y) => $"The value '{x}' is not the same type as '{y}' try '{y.GetType()}'."));
+{
+    options.ModelBindingMessageProvider.SetAttemptedValueIsInvalidAccessor(
+    (x, y) => $"The value '{x}' is not the same type as '{y}' try '{y.GetType()}'.");
+
+    options.CacheProfiles.Add("NoCache", new CacheProfile() { NoStore = true });
+    options.CacheProfiles.Add("60Secs", new CacheProfile()
+    {
+        Location = ResponseCacheLocation.Any,
+        Duration = 60
+    });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opts =>
@@ -49,6 +58,38 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     builder.Configuration.GetConnectionString("DefaultConnection"))
 
 );
+builder.Services.AddIdentity<ApiUser, IdentityRole>(options => 
+{
+    options.Password.RequireDigit = true; 
+    options.Password.RequireLowercase = true; 
+    options.Password.RequireUppercase = true; 
+    options.Password.RequireNonAlphanumeric = true; 
+    options.Password.RequiredLength = 12; 
+})
+.AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+//Add Authentication
+builder.Services.AddAuthentication(options => { 
+options.DefaultAuthenticateScheme =
+options.DefaultChallengeScheme =
+options.DefaultForbidScheme =
+options.DefaultScheme =
+options.DefaultSignInScheme =
+options.DefaultSignOutScheme =
+JwtBearerDefaults.AuthenticationScheme; 
+}).AddJwtBearer(options => { 
+options.TokenValidationParameters = new TokenValidationParameters 
+{
+        ValidateIssuer = true,
+        ValidIssuer = builder.Configuration["JWT:Issuer"],
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["JWT:Audience"],
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(
+        System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"]))
+};
+});
 
 //cors
 builder.Services.AddCors(options =>
@@ -81,6 +122,14 @@ builder.Services.AddCors(options =>
 //builder.Services.Configure<ApiBehaviorOptions>(options =>
 //options.SuppressModelStateInvalidFilter = true);
 
+
+
+//server side caching
+builder.Services.AddResponseCaching(options =>
+{
+    options.MaximumBodySize = 32 * 1024 * 1024; 
+    options.SizeLimit = 50 * 1024 * 1024;
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -99,8 +148,28 @@ else
 app.UseHttpsRedirection();
 //apply cors "must be before Authorization
 app.UseCors();
+app.UseResponseCaching();//server side cache
+app.UseAuthentication();
 app.UseAuthorization();
 
+
+
+//Default Cache Setting for not explicit ones
+app.Use(async (context, next) =>
+{
+    context.Response.GetTypedHeaders().CacheControl =
+    new Microsoft.Net.Http.Headers.CacheControlHeaderValue()
+    {
+        NoCache = true,
+        NoStore = true,
+    };
+    await next();
+});
+
+
+
+
+//Error Points
 app.MapGet("/error/test", 
     [EnableCors("AnyOrigin")]
     [ResponseCache(NoStore = true)]
@@ -129,6 +198,9 @@ app.MapGet("/error",
 });
 
 
+
+
+
 //Testing the code on demand constraint of rest 
 app.MapGet("/cod/test",
     [EnableCors("AnyOrigin_GetOnly")]
@@ -143,6 +215,47 @@ app.MapGet("/cod/test",
     "<noscript>Your client does not support JavaScript</noscript>",
     "text/html"));
 
+
+//Cache endpoint test
+app.MapGet("/cache/test/1",
+    [EnableCors("AnyOrigin")]
+    (HttpContext context) =>
+    {
+        context.Response.Headers["cache-control"] =
+        "no-cache ,no-store";
+        return Results.Ok();
+    });
+
+
+//Testing Authorization
+app.MapGet("/auth/test/1",
+    [Authorize]
+    [EnableCors("AnyOrigin")]
+    [ResponseCache(NoStore = true)]() =>
+    {
+        return Results.Ok("You are authorized as normal user");
+    }
+    );
+
+app.MapGet("/auth/test/2",
+    [Authorize(Roles = Roles.Moderator)]
+    [EnableCors("AnyOrigin")]
+    [ResponseCache(NoStore = true)] () =>
+    {
+        return Results.Ok("You are authorized as Moderator ");
+    }
+    );
+
+app.MapGet("/auth/test/3",
+    [Authorize(Roles = Roles.Administrator)]
+    [EnableCors("AnyOrigin")]
+    [ResponseCache(NoStore = true)] () =>
+    {
+        return Results.Ok("You are authorized as Admin");
+    }
+    );
+
 app.MapControllers().RequireCors("AnyOrigin");
+
 
 app.Run();
